@@ -1,0 +1,23 @@
+{
+
+  "40F520230099": {
+    "prog": "start(){\n  this.ledModus(matrix1616);\n  this.myCounter1 = 0;\n  this.myCounter2 = 0;\n  this.myCounter3 = 0;\n  this.helligkeit(100);\n  //this.ladeAnimation('tiny',spriteControl);\n}\n\njedeHundertstel(){\n  this.myCounter1++;\n  if (this.myCounter1>1) {\n    this.myCounter2++;\n    if (this.myCounter2>15) {\n      this.myCounter2 = 0;\n      this.myCounter3++;\n      if (this.myCounter3>3)\n        this.myCounter3 = 0;\n    }\n\tthis.myCounter1 = 0;\n    this.fuelleBild(schwarz)\n    this.maleFeuer();\n\t//this.zeigeBild(1);\n\t//\n    //this.zeigeAnimation('tiny',['rechts','vorn','links','hinten'][this.myCounter3]);\n    this.bildZuLEDs();\n    this.fertig();\n  }\n}\n",
+    "ip": "192.168.0.144",
+    "name": "Sören_Quad",
+    "color": [
+      "#00FF77",
+      "#FFFFFF",
+      "#FFFFFF"
+    ]
+  },
+  "40F520229A58": {
+    "prog": "start(){\n  this.ledModus(ring3);\n  this.helligkeit(100);\n  this.myCounter1=0;\n}\n\njedeHundertstel(){\n  this.myCounter1++;\n  if (this.myCounter1>5) {\n\tthis.myCounter1 = 0;\n    this.malePlasma();\n    //this.fuelleBild(rot);\n    this.bildZuLEDs();\n    for (let i = 0; i<12; i++) {\n      this.setzePixel(i*5,weiss);\n    \t// this.invertierePixel(i*5);\n       //\tthis.invertierePixel(60+i*4);\n       //\tthis.invertierePixel(60+48+Math.round(i*40/12));\n    }\n    let i = this.minute();\n    this.setzePixel(i,schwarz);\n    this.setzePixel(60+Math.round(i*4/5),schwarz);\n    this.setzePixel(60+48+Math.round(i*2/3),schwarz);\n    i = this.stunde() % 12 + this.minute()/60;\n      this.setzePixel(60+Math.round(i*4),schwarz);\n      this.setzePixel(60+48+Math.round(i*40/12),schwarz);\n    this.fertig();\n  }\n}\n",
+    "ip": "192.168.0.145",
+    "name": "Sören_Ring3",
+    "color": [
+      "#0077FF",
+      "#FFFFFF",
+      "#FFFFFF"
+    ]
+  }
+}

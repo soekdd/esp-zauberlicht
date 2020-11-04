@@ -1,0 +1,360 @@
+@import "/lib/codemirror/lib/codemirror.css";
+@import "/lib/codemirror/theme/eclipse.css";
+@import "/lib/codemirror/addon/hint/show-hint.css";
+button {
+    height: 30px
+}
+/*.nav-tabs > li > */
+a {
+    color: black;
+    font-weight: 900;
+    text-shadow: 0 0 5px rgb(255 255 255)
+}
+canvas {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    z-index: -5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: fantasy;
+}
+
+h2{
+    font-size:16pt;
+    white-space: nowrap;
+}
+
+hr{
+    margin: 1vh;
+}
+.CodeMirror{
+    height: 70vh;
+}
+.link{
+    cursor: pointer
+}
+
+.link:hover{
+    fill: white
+}
+
+
+.cellEdit {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.half {
+    width: 50%;
+    padding: 0;
+}
+
+.third {
+    width: 33.33%;
+    padding: 0;
+}
+
+.game-object {
+    width: 325px;
+    max-width: 325px!important;
+    text-align: left!important;
+}
+
+.scrollbox {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.battery {
+    margin-bottom: 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.cellEdit {
+    display: block;
+    height: 26.6px;
+    padding: 2px 0px;
+    margin-bottom: -1px;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    text-align: center;
+}
+
+.h3 {
+    font-family: fantasy;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.h4 {
+    font-family: fantasy;
+    font-size: 15pt;
+}
+
+.outer{
+    padding-left:5vw;
+}
+
+.debug{
+    margin-top:1vh;
+}
+
+.tabContent {
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    background-size:cover;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+ul.nav {
+    background: lightgray;
+}
+
+.biotop-debug .btn {
+    height: 70px;
+    font-size: 120%;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.biotop-stories .btn {
+    height: 70px;
+    font-size: 120%;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.biotop-stories .btn:first-child {
+    margin-bottom: 50px;
+}
+
+#epuckHome {
+    //width: 80%;
+    margin-bottom: 50px;
+    height: 170px;
+}
+
+.puckbtn1,
+.puckbtn2 {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.puckbtn1 {
+    background: lightgray;
+}
+
+.biotop-icons {
+    height: 27px;
+    width: 27px;
+    margin-right: 5px;
+    padding: 6px 13px;
+    background: url('img/icons72.png') no-repeat;
+    padding: 6px 13px;
+}
+
+.biotop-unity {
+    background-position: -81px 0px;
+}
+
+.biotop-bot1 {
+    background-position: 0px 0px;
+}
+
+.biotop-bot2 {
+    background-position: -27px 0px;
+}
+
+.biotop-bot3 {
+    background-position: -54px 0px;
+}
+
+.biotop-trigger {
+    background-position: -108px 0px;
+}
+
+.biotop-new {
+    background-position: -161px 0px;
+}
+
+.biotop-profile {
+    background-position: -135px 0px;
+}
+
+.biotop-badge {
+    width: 30px;
+    padding-left: auto;
+    text-align: center;
+    margin: 5px;
+}
+
+#story-list li,
+#unity-list li,
+#biotop-list li {
+    margin: 5pt auto;
+    list-style-type: none;
+}
+
+#biotop-control {
+    display: flex;
+    width: 80%;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.btn {
+    overflow: hidden;
+}
+
+#biotop-control .btn {
+    width: 100%;
+    text-align: left;
+}
+
+#biotop-list,
+#unity-list,
+#biotop-menu {
+    margin-left: 30px;
+    padding-left: 0px;
+}
+
+.biotop-target {
+    width: 130px;
+    text-align: left;
+}
+
+.biotop-target-edit {
+    width: 105px;
+    text-align: left;
+}
+
+.biotop-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.biotop-parameter-edit .biotop-group {
+    display: inline-block;
+    position: relative;
+}
+
+.edit-label {
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 195px;
+    display: inline-block;
+}
+
+.biotop-parameter {
+    width: 370px;
+    height: 30px;
+    background: url('img/dots.png');
+    text-align: left;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.biotop-parameter-edit {
+    height: 30px;
+    text-align: left;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn a {
+    color: inherit;
+}
+
+.btn {
+    justify-content: space-between;
+    border: 1px solid rgba(50, 50, 50, 0.3);
+}
+
+#biotop-menu input {
+    margin-bottom: 0px;
+    width: 150px;
+    height: 30px;
+}
+
+.placeholder {
+    width: 45px;
+}
+
+.glyphicon-minus {
+    color: rgba(1, 1, 1, 0);
+}
+
+#biotop-list .btn-blur {
+    overflow: hidden;
+    cursor: default;
+}
+
+.dropdown-menu {
+    max-height: 350px;
+    overflow: auto;
+}
+
+#biotop-list .parameter,
+#biotop-list .comment,
+#biotop-list input {
+    margin-bottom: 0px;
+    width: 438px;
+    height: 30px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+#biotop-list input {
+    width: 455px
+}
+
+#biotop-list .parameter {
+    width: 100px;
+}
+
+.scrollableContainer {
+    position: absolute;
+    top: 120px;
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scrollableContainer2 {
+    width: 75%;
+    left: 25%;
+    position: absolute;
+    top: 120px;
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.biotop-slideshow {
+    background-position: -187px 0px;
+}
