@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+/Zauberlicht_Firmware/Zauberlicht_Firmware.ino
+/data/progs.json
